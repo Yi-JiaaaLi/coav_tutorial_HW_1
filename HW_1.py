@@ -122,7 +122,7 @@ class Network():
         self.epochs = epochs
         self.batch_size = batch_size
         batches_num = -(-x_train.shape[0] // self.batch_size)
-        self.optimizer = optimizer
+#         self.optimizer = optimizer
         start_time = time.time()
         template = "epoch {}: {:.2f}s, train_acc={:.2f}, train_loss={:.2f}, test_acc={:.2f}, test_loss={:.2f}"
         train_loss_list=[]
@@ -194,6 +194,6 @@ class Network():
         plt.show()
        
 fnn = Network(sizes =[784, 100, 150, 10], activation =['relu', 'relu', 'softmax'])
-fnn.train(x_train, y_train, x_test, y_test, epochs=50, batch_size=64, optimizer='sgd', lr =1e-2)
+fnn.train(x_train, y_train, x_test, y_test, epochs=50, batch_size=64, lr =1e-2)
 
 
