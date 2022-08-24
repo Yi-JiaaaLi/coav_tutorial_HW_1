@@ -118,7 +118,7 @@ class Network():
     def accuracy(self, y, output):
         return np.mean(np.argmax(y, axis=-1)== np.argmax(output.T,axis=-1))
 
-    def train(self,x_train, y_train, x_test, y_test,batch_size,epochs, optimizer,lr):
+    def train(self,x_train, y_train, x_test, y_test,batch_size,epochs, lr):
         self.epochs = epochs
         self.batch_size = batch_size
         batches_num = -(-x_train.shape[0] // self.batch_size)
