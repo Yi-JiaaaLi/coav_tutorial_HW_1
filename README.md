@@ -1,5 +1,4 @@
 # coav_tutorial_HW_1
-# coav_tutorial_hw_1
 # hw1_feedforward classification network from scratch
 feedforward neural network model architecture: fnn =network(sizes=[784,100,150,10])
 - 2 hidden layers/mini-batch SGD/cross entrophy loss 
