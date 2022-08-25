@@ -12,5 +12,6 @@ feedforward neural network model architecture: fnn =network(sizes=[784,100,150,1
 
 ![32_acc](https://user-images.githubusercontent.com/102316495/186375128-31281fad-43de-4c60-88ef-c8aff50ed50b.png "acc")
 ![32_loss](https://user-images.githubusercontent.com/102316495/186375142-3441b24a-f795-41d1-b40c-550c8ab6df35.png "loss")
-- initialize weights to zero: if weights of neural network are initialized with 0,the derivative with respect to loss function is the same for every W,thus all weights have the same value in subsequent iterations.this makes hidden neurons symmetric.
+- initialize weights to zero: if weights of neural network are initialized with 0,the derivative with respect to loss function is the same for every W,thus all weights have the same value in subsequent iterations.
+- learning rate determines the step size at each iteration while moving toward a minimum of a loss function.if learning rate is set too low,training will progress slowly,making very tiny update to the weights.however,if learning rate is set too high,it can cause divergent behaivor in loss funciton.
 
